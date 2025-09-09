@@ -1,0 +1,25 @@
+---
+import { SITE } from "@/siteConfig.ts";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = SITE.name, description = SITE.bio } = Astro.props;
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={SITE.url} />
+
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={`${SITE.url}/og-image.jpg`} />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content={SITE.locale} />
+
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={`${SITE.url}/og-image.jpg`} />
+<meta name="twitter:card" content="summary_large_image" />

@@ -1,0 +1,14 @@
+---
+import { formatDate } from "@/lib/util";
+
+const { post } = Astro.props;
+---
+
+<li class="flex flex-col text-center no-underline hover:underline">
+  <a href={`/blog/${post.slug}`}>
+    <span
+      class="flex flex-wrap justify-center text-balance text-2xl font-medium"
+      >{post.data.title}</span
+    >
+  </a>
+</li>

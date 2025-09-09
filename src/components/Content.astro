@@ -1,0 +1,25 @@
+---
+import { SITE } from "@/siteConfig";
+
+import Introduction from "@/components/Introduction.astro";
+import CustomLink from "@/components/CustomLink.astro";
+---
+
+<Introduction />
+<!-- <ul class="flex justify-center gap-4 py-12">
+  {
+    SITE.iconLinks.map((link) => {
+      return <IconLink url={link.url} icon={link.icon} />;
+    })
+  }
+</ul> -->
+
+<h1 class="mt-4 text-center text-3xl font-semibold text-lightModeForeground dark:text-darkModeForeground cinzel-text">Links Úteis</h1>
+
+<ul class="grid gap-y-6 pb-12 pt-4">
+  {
+    SITE.customLinks.map((link) => {
+      return <CustomLink url={link.url}>{link.title}</CustomLink>;
+    })
+  }
+</ul>
