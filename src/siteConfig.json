@@ -9,17 +9,27 @@
   ],
   "customLinks": [
     {
+      "id": "0",
+      "title": "Portal do Aluno",
+      "url": "https://portal.faculdadefama.edu.br/FrameHTML/web/app/edu/PortalEducacional/login/"
+    },
+    {
       "id": "1",
+      "title": "AVA - Disciplinas Digitais",
+      "url": "https://ava.faculdadefama.edu.br"
+    },
+    {
+      "id": "2",
       "title": "Drive da Sala",
       "url": "https://drive.google.com/drive/folders/1r1YcdyWpR3DGWOeXC04Re96RsoGzknYx?usp=drive_link"
     },
     {
-      "id": "2",
+      "id": "3",
       "title": "Calendário da Sala",
       "url": "https://calendar.google.com/calendar/embed?src=9d0ba461d401df6dfa2e8c2d2d86533948f952f675dee9b0e69e7d41d74534c5%40group.calendar.google.com&ctz=America%2FSao_Paulo"
     },
     {
-      "id": "3",
+      "id": "4",
       "title": "[TGD] Lista de Apresentação",
       "url": "https://docs.google.com/spreadsheets/d/1AIkgzsTxClw6N3eBI48n16Kf29aBUTySQBt5bHJtT1k/edit?usp=sharing"
     }
