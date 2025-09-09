@@ -9,6 +9,7 @@ export default defineConfig({
   redirects: {
     "/blog": "/",
   },
-  site: "https://example.treelink.com",
+  site: "https://pedroafabri.github.io",
+  base: "/fama-direito",
   integrations: [tailwind(), sitemap(), icon()],
 });
