@@ -30,9 +30,9 @@ const { Content } = await entry.render();
   <SeoPost slot="head" entry={entry} />
   <main>
     <a
-      href="/"
+      href={import.meta.env.BASE_URL}
       class="block py-3 text-lg font-medium uppercase text-lightModeForegroundMuted underline underline-offset-4 hover:text-lightModeForeground dark:text-darkModeForegroundMuted dark:hover:text-darkModeForeground"
-      >{`← ${SITE.name}`}</a
+      >{`← VOLTAR`}</a
     >
     {
       entry.data.image && (
