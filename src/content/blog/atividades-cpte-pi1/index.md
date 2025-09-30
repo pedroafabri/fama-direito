@@ -40,3 +40,6 @@ A professora Fernanda comunicou na última aula do dia 16/09/2025 os seguintes p
 1. Todas as atividades atrasadas terão a última chance de serem entregues no dia da primeira prova (23/09/2025);
 2. Após a 1ᵃ V.A, atividades atrasadas **NÃO SERÃO MAIS ACEITAS**;
 
+## ATUALIZAÇÃO - 29/09/2025
+
+A professora Fernanda comunicou na última aula do dia 29/09/2025 que o prazo de entrega das atividades pendentes foi prorrogada até dia 07/10/2025.
