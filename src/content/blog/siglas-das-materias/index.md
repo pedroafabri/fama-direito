@@ -20,8 +20,8 @@ publicationDate: 2026-02-23
 |Sigla|Matéria|
 |-----|-------|
 |TGP|Teoria Geral do Processo|
-|DP-TC|Direito Penal — Teoria do Crime|
-|DC-F|Direito Civil — Fundamentos|
-|DC-DF|Direito Constitucional — Direitos Fundamentais|
+|Penal I|Direito Penal — Teoria do Crime|
+|Civil I|Direito Civil — Fundamentos|
+|Constitucional|Direito Constitucional — Direitos Fundamentais|
 |PI2|Projeto Integrador II|
-|MC|Metodologia Científica|
+|Met. Cientîfica|Metodologia Científica|
