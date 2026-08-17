@@ -1,34 +1,21 @@
 ---
-import { getCollection, type CollectionEntry } from "astro:content";
-
-import { SITE } from "@/siteConfig";
-
-import BaseLayout from "@/layouts/BaseLayout.astro";
-
-import Content from "@/components/Content.astro";
-import Post from "@/components/Post.astro";
-import SeoPage from "@/components/SeoPage.astro";
-
-const posts = (await getCollection("blog")).sort(
-  (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
-    b.data.publicationDate.valueOf() - a.data.publicationDate.valueOf(),
-);
+// src/pages/index.astro
+const NOTION_URL =
+  "https://app.notion.com/p/Direito-Noturno-2025-2-3bf7d1d61f3f80779348dd5a607ecb34";
 ---
 
-<BaseLayout>
-  <SeoPage slot="head" />
-  <main>
-    <Content />
-    {
-      SITE.blog ? (
-        <h1 class="mt-4 text-center text-3xl font-semibold text-lightModeForeground dark:text-darkModeForeground cinzel-text">Postagens</h1>
-
-        <ul class="grid list-none gap-y-8 px-0 py-12">
-          {posts.map((post: CollectionEntry<"blog">) => (
-            <Post post={post} />
-          ))}
-        </ul>
-      ) : null
-    }
-  </main>
-</BaseLayout>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content={`0; url=${NOTION_URL}`} />
+    <title>Redirecionando...</title>
+    <script define:vars={{ NOTION_URL }}>
+      window.location.replace(NOTION_URL);
+    </script>
+  </head>
+  <body>
+    <p>Redirecionando para o Notion...</p>
+    <p>Se não for redirecionado, <a href={NOTION_URL}>clique aqui</a>.</p>
+  </body>
+</html>
